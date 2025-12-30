@@ -1,224 +1,253 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
-
-:root{
-    --mainTextColor-light:#000;
-    --secondaryTextColor-light:rgb(51 51 51);
-    --mainLinkColor-light:#0da2b8;
-    --mainBorderColor-light:rgb(218, 218, 218);
-    --mainBgColor-light:rgb(249, 250,251);
-
-    --mainTextColor-dark:#fff;
-    --mainTextColor-dark:#fff;
-    --mainTextColor-dark:#fff;
-    --secondaryTextColor-dark:#adb0b1;
-    --mainLinkColor-dark:rgb(30, 190,214);
-    --mainBorderColor-dark:#2b3031;
-    --mainBgColor-dark:#131415;
-
-    --mainTextColor:var(--mainTextColor-dark);
-    --secondaryTextColor:var(--secondaryTextColor-dark);
-    --mainLinkColor:var(--mainLinkColor-dark);
-    --mainBorderColor:var(--mainBorderColor-dark);
-    --mainBgColor:var(--mainBgColor-dark);
-} 
-
-*{ 
-    font-family: 'Readex Pro';
-    line-height: 1.5em; 
-    box-sizing: border-box; 
-    color: var(--mainTextColor)
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: var(--mainBgColor);
+body {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  color: #000;
+  background-color: #4a4a4a;
+  padding: 20px;
+  /* font-weight: 400; */
 }
 
-p, span, li{
-    color: var(--secondaryTextColor);
-    font-size: 1em;
-}
-
-a{
-    text-decoration: none;
-    color:var(--mainLinkColor)
-}
-
-li{
-    line-height: 1.9em;
-}
-
+/* PDF Paper Container */
 #container--main {
-    max-width: 700px;
-    margin: 0 auto;
+  max-width: 816px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 45px 65px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  min-height: 1056px;
+  text-align: justify;
 }
 
-.section--page{
-    padding-top: 1em;
-    padding-bottom: 1em;
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-#wrapper--hero { 
-    display: flex;
-    align-items: center;
-    gap: 4em;
-
-} 
-
-#bio {
-    font-weight: 300;
+#user--name {
+  font-family: Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.15;
+  margin-bottom: 2px;
 }
 
-#user--name{
-    font-size: 48px;
-    text-align: center;
-    margin: 0 auto;
+.contact-line {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.15;
+  margin-bottom: 0;
 }
 
-/* #profile-pic{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-} */
-
-#email{
-    color: var(--mainTextColor);
+.contact-line a {
+  color: #1155cc;
+  text-decoration: none;
+  font-weight: 400;
 }
 
-#socials--list a:hover{
-    /* font-weight: 100; */
-    color: var(--mainLinkColor);
-    /* font-size: 0.9em; */
+.contact-line a:hover {
+  text-decoration: underline;
 }
 
-#socials--list{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    column-gap: 1em;
-    flex-wrap: wrap;
+.location {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.15;
 }
 
-#socials--list a {
-   font-size: 0.9em;
-   color: var(--secondaryTextColor);
-   transition: 0.3s;
-}   
-
-#socials--list a:hover{
-    /* font-weight: 100; */
-    color: var(--mainLinkColor);
-    /* font-size: 0.9em; */
-}  
-
-#socials--list p {
-    font-size: 0.9em;
-    color: var(--secondaryTextColor);
-    transition: 0.3s;
- }   
- 
- 
-
-#titles--list {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    column-gap: 1em;
-    flex-wrap: wrap;
-}
-#titles--list p{
-    font-size: 0.9em;
-    color: var(--secondaryTextColor);
-    transition: 0.3s;
-    font-weight: 900;
- }   
- 
- 
-
-
-#wrapper--techstack__items{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    font-size: 0.9em;
+/* Section Styling */
+.section--page {
+  margin-bottom: 18px;
 }
 
-.card--techstack{
-    border: 1px solid var(--mainBorderColor);
-    border-radius: 5px;
-    padding: 0.5em 1em;
-    /* align-items: center; */
-}   
-
-.card--work-history{
-    border-left: 1px solid var(--mainBorderColor);
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-left: 2em;
+.section--page h2 {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 6px;
+  padding-bottom: 0;
+  border: none;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.5;
 }
 
-.line-break{
-    background-color: var(--mainBorderColor);
-    height: 1px;
+/* Work History */
+.job-entry {
+  margin-bottom: 12px;
 }
 
-.card--project{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-top: 1px solid var(--mainBorderColor);
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0;
 }
 
-.card--project a{
-    color: var(--mainTextColor);
-
-    transition: 0.3s;
+.job-title {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  font-style: italic;
+  color: #000;
+  font-weight: 530;
+  line-height: 1.5;
 }
 
-.card--project a:hover{
-    color: rgb(30, 190,214);
-
+.job-date {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  font-style: italic;
+  color: #000;
+  font-weight: 530;
+  white-space: nowrap;
+  line-height: 1.5;
 }
 
-@media(max-width:600px){
-
-    .section--page{
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-
-    /* #wrapper--hero{
-        gap: 1em;
-        flex-direction: column;
-    } */
-
-    /* #profile-pic{
-        width: 200px;
-        height: 200px;
-    } */
-
-    #title--list ul li{
-        text-align: center;
-      }
-
-      #title--list ul li:not(:last-child)::after{
-        content:""; 
-        border:1px solid #e2e2e2;
-        border-width: 1px 1px 0 0;
-        position:absolute; 
-        right:-5px; 
-        top:0; 
-        height:100%;
-      }
-    
-
-    .card--work-history{
-        border-left: none;
-        padding-left: 0;
-    }
+.job-entry ul {
+  margin: 0;
+  padding-left: 40px;
+  list-style-type: disc;
 }
 
+.job-entry li {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  color: #000;
+  font-weight: 530;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  text-align: justify;
+}
 
+.job-entry li:last-child {
+  margin-bottom: 0;
+}
 
-i {
-    padding-right: 5px;
+/* Education */
+.education-entry {
+  margin-bottom: 8px;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.education-school {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  font-style: normal;
+  color: #000;
+  font-weight: 530;
+  line-height: 1.5;
+}
+
+.education-date {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  font-style: normal;
+  color: #000;
+  font-weight: 530;
+  line-height: 1.5;
+}
+
+.education-entry ul {
+  margin: 0;
+  padding-left: 40px;
+  list-style-type: disc;
+}
+
+.education-entry li {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  color: #000;
+  font-weight: 530;
+  line-height: 1.5;
+}
+
+/* Tech Stack / Skills */
+.skills-list {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  color: #000;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 40px;
+  list-style-type: disc;
+}
+
+.skills-list li {
+  font-family: Arial, sans-serif;
+  font-size: 10.5pt;
+  color: #000;
+  font-weight: 530;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.skills-list li strong {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: none;
+    padding: 0;
+  }
+
+  #container--main {
+    box-shadow: none;
+    padding: 0.5in 0.75in;
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .contact-line a {
+    color: #1155cc;
+  }
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  body {
+    padding: 10px;
+  }
+
+  #container--main {
+    padding: 40px 30px;
+  }
+
+  .job-header,
+  .education-header {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .job-date,
+  .education-date {
+    font-size: 10pt;
+  }
+
+  .job-entry ul,
+  .education-entry ul,
+  .skills-list {
+    padding-left: 25px;
+  }
 }

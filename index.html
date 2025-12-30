@@ -1,102 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/15107c2555.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Platino - Resume</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
     <div id="container--main">
-        <section id="section--page">
-            <div id="name--page">
-                <div id="user--name">James Platino</div>
-            </div>  
-        </section>
-        <section id="section--page">
-            <div id="titles--list">
-                <p>React Developer</p>
-                <p>Angular Developer</p>
-                <p>Software Developer</p>
-                <p>Web/App Developer</p>
-            </div>
-        </section>
-        <section id="section--page">
-            <div id="socials--list">
-                <p><i class="fa-solid fa-mobile-screen"></i></></i>09610792363</p>
-                <p><i class="fa-solid fa-envelope"></i>jamesplatinotomes@gmail.com</p>
-                <a href="https://github.com/Platzu16"><i class="fa-brands fa-github"></i>Github</a>
-                <a href="https://www.linkedin.com/in/james-platino-1a3a55192/"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
-            </div>
-        </section>
+      <!-- Header Section -->
+      <header class="header-section">
+        <div id="user--name">James Platino</div>
+        <div class="contact-line">
+          09610792363 | jamesplatinotomes@gmail.com |
+          <a href="https://www.linkedin.com/in/james-p-1a3a55192/" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/ejtx16" target="_blank">GitHub</a>
+        </div>
+        <div class="location">Mandaluyong City, 1550</div>
+      </header>
+
+      <!-- Work History Section -->
+      <section class="section--page">
+        <h2>Work History</h2>
+
+        <div class="job-entry">
+          <div class="job-header">
+            <span class="job-title">Analyst Programmer at Sun Life, BGC Taguig</span>
+            <span class="job-date">April 2024 to Current</span>
+          </div>
+          <ul>
+            <li>
+              Developed a web-based Admin Console using React, Java Spring Boot, and PostgreSQL that manages all middleware APIs for EMF
+              (Enterprise Mobile Framework), which benefits non-technical people to easily manage and test the mobile app data.
+            </li>
+            <li>
+              Developed a POC (Proof of Concept) to integrate Ionic Capacitor plugins mainly for push notifications in different hybrid apps
+              that use Angular and React with micro frontend design.
+            </li>
+            <li>Collaborated with DevOps to add Jenkins CI/CD pipelines for EMF mobile platform and use it in the HK market.</li>
+            <li>
+              Worked with various developers to create AWS EKS, S3, SNS, and RDS instances for middleware APIs that can be used across the
+              Asia market.
+            </li>
+            <li>
+              Collaborated with cross-functional teams to fully integrate push notifications and biometrics within hybrid apps that use
+              React/Next.js and microservices, using EMF capacitor plugins that help with marketing and advisor onboarding.
+            </li>
+            <li>
+              Assisted in knowledge transfer to walk developers through how EMF works while documenting the process of implementations using
+              Jira Confluence.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-entry">
+          <div class="job-header">
+            <span class="job-title">Full Stack Developer at Pru Life UK, BGC Taguig</span>
+            <span class="job-date">July 2022 to March 2024</span>
+          </div>
+          <ul>
+            <li>
+              Developed a report module using React (JavaScript, HTML, CSS) for an information system that helps to extract live data for
+              recruitment web app.
+            </li>
+            <li>
+              Added an uploading file facility to a file-service using Nodejs for a recruitment system to fasten the document uploading.
+            </li>
+            <li>Revamped the outdated tech stack from React to Next.js of a time tracking application and added an admin module.</li>
+            <li>Worked with Azure cloud blob storage for file uploading.</li>
+            <li>Collaborated with DevOps team to set up docker with Jenkins pipeline to automate the deployment of a web app.</li>
+          </ul>
+        </div>
+
+        <div class="job-entry">
+          <div class="job-header">
+            <span class="job-title">Developer/Analyst at FurtherEdge Corp.</span>
+            <span class="job-date">September 2020 to July 2022</span>
+          </div>
+          <ul>
+            <li>Developed the HRIS and Payroll modules such as the Profile, Leaves and Out of Office application.</li>
+            <li>Changed the UI/UX of some forms in Personnel Information module and make it more user friendly.</li>
+            <li>
+              Added mobile and web responsiveness for Dashboard, Time and Attendance, Benefits, and Personnel Information module so it can
+              be used in different devices.
+            </li>
+            <li>Created a python script for quality assurance testing for all modules.</li>
+          </ul>
+        </div>
+
+        <div class="job-entry">
+          <div class="job-header">
+            <span class="job-title">Software Engineer at Hilsoft Inc.</span>
+            <span class="job-date">May 2019 to June 2020</span>
+          </div>
+          <ul>
+            <li>Built a new file application module for requesting any document in the HRIS system to make an easy filing of documents.</li>
+            <li>Designed the UI/UX of Personnel Information, employee tables, and the color scheme of different features.</li>
+          </ul>
+        </div>
+      </section>
+      <!-- 
+        Skills Section
         <section class="section--page">
-            <h2>Tech stack</h2>
-        
-            <div id="wrapper--techstack__items">
-                <div class="card--techstack"><span>React, Next JS, Angular</span></div>
-                <div class="card--techstack"><span>Java, JavaScript, NodeJS</span></div>
-                <div class="card--techstack"><span>Nest JS, Express, SpringBoot</span></div>
-                <div class="card--techstack"><span>Postgres, MongoDB, MySQL</span></div>
-                <div class="card--techstack"><span>Git, Jenkins, Azure DevOps, Docker</span></div>
-                <div class="card--techstack"><span>Jira, Bitbucket, Gitlab</span></div>
-            </div>
-        </section>
-        <section id="work-history-wrapper" class="section--page">
-            <h2>Work History</h2>
-        
-            <div class="line-break"></div>
-            <div class="card--work-history">
-                <strong> FULLSTACK DEVELOPER | PRULIFEUK</strong>
-                <p>07/2022 - Present</p>
-                <ul>
-                    <li>Developed an information and el-licensing system revamp</li>
-                    <li>Worked on the UI/UX and front-end design of reports module and uploading of files</li>
-                    <li>Added the new design and process single card uploading of documents for licensing journey for new agents in JoinPru web application</li>
-                    <li>Improved the speed performance of uploading and fetching of documents to make easier for the agents </li>
-                </ul>
-            </div>
-        
-            <div class="line-break"></div>
-        
-            <div class="card--work-history">
-                <strong>DEVELOPER/ANALYST | FURTHEREDGE CORP.</strong>
-                <p>09/2020 - 07/2022</p>
-                <ul>
-                    <li>Developed the HRIS and Payroll modules such as the Profile, Leaves and Out of Office application.</li>
-                    <li>Changed the UI/UX of some forms in Personnel Information module and make it more user friendly.</li>
-                    <li>Added mobile and web responsiveness for Dashboard, Time and Attendance, Benefits, and
-                        Personnel Information module so it can be used in different devices.</li>
-                    <li>Created a python script for quality assurance testing for all modules.</li>
-                </ul>
-            </div>
-        
-            <div class="line-break"></div>
-        
-            <div class="card--work-history">
-                <strong>SOFTWARE ENGINEER | HILSOFT INC.</strong>
-                <p>05/2019 - 06/2020</p>
-                <ul>
-                    <li>Built a new file application module for requesting any document in the HRIS system to make an easy
-                        filing of documents.</li>
-                    <li>Designed the UI/UX of Personnel Information, employee tables, and the color scheme of different
-                        features</li>
-                </ul>
-            </div>
-        
-            <div class="line-break"></div>
-        
-          
-        </section> 
-        <section id="section--page"> 
-            <h2>Education</h2>
-            <p>Jose Rizal University - Mandaluyong City</p>
-            <ul>
-                <li>Bachelor of Science in Information Technology (2015-2019)</li>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Frontend:</strong> React, Next.js, Angular, JavaScript, TypeScript, HTML, CSS</li>
+                <li><strong>Backend:</strong> Node.js, Nest.js, Express, Java Spring Boot</li>
+                <li><strong>Database:</strong> PostgreSQL, MongoDB, MySQL</li>
+                <li><strong>Cloud & DevOps:</strong> AWS (EKS, S3, SNS, RDS), Azure, Docker, Jenkins, Git</li>
+                <li><strong>Tools:</strong> Jira, Confluence, Bitbucket, GitLab</li>
             </ul>
-        </section>
-       
+        </section> -->
+
+      <!-- Education Section -->
+      <section class="section--page">
+        <h2>Education</h2>
+        <div class="education-entry">
+          <div class="education-header">
+            <span class="education-school">BSIT in Jose Rizal University, Mandaluyong City</span>
+            <span class="education-date">Status - Graduated</span>
+          </div>
+          <!-- <ul>
+                    <li>Bachelor of Science in Information Technology</li>
+                </ul> -->
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
