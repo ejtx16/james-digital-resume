@@ -111,7 +111,7 @@ body {
   font-size: 10.5pt;
   font-style: italic;
   color: #000;
-  /* font-weight: 530; */
+  font-weight: 530;
   line-height: 1.5;
 }
 
@@ -366,6 +366,7 @@ body {
     margin-bottom: 10px;
     line-height: 1.6;
     text-align: left;
+    font-weight: 400 !important;
   }
 
   /* Education entries */
@@ -437,5 +438,6 @@ body {
   .education-entry li,
   .skills-list li {
     font-size: 9.5pt;
+    font-weight: 400 !important;
   }
 }
