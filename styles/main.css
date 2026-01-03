@@ -59,6 +59,15 @@ body {
   text-decoration: underline;
 }
 
+.contact-item {
+  display: inline;
+}
+
+.contact-separator {
+  display: inline;
+  margin: 0 4px;
+}
+
 .location {
   font-family: Arial, sans-serif;
   font-size: 12pt;
@@ -102,7 +111,7 @@ body {
   font-size: 10.5pt;
   font-style: italic;
   color: #000;
-  font-weight: 530;
+  /* font-weight: 530; */
   line-height: 1.5;
 }
 
@@ -224,7 +233,7 @@ body {
   }
 }
 
-/* Responsive */
+/* Responsive - Tablet */
 @media (max-width: 850px) {
   body {
     padding: 10px;
@@ -249,5 +258,184 @@ body {
   .education-entry ul,
   .skills-list {
     padding-left: 25px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 600px) {
+  body {
+    padding: 8px;
+    background-color: #fff;
+  }
+
+  #container--main {
+    padding: 20px 16px;
+    box-shadow: none;
+    min-height: auto;
+    text-align: left;
+  }
+
+  /* Header adjustments for mobile */
+  .header-section {
+    margin-bottom: 20px;
+  }
+
+  #user--name {
+    font-size: 18pt;
+    margin-bottom: 8px;
+  }
+
+  .contact-line {
+    font-size: 10pt;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  .location {
+    font-size: 10pt;
+    margin-top: 4px;
+  }
+
+  /* Stack contact items vertically on mobile */
+  .contact-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 0;
+  }
+
+  .contact-item {
+    display: inline-block;
+  }
+
+  .contact-separator {
+    display: inline;
+    margin: 0 6px;
+    color: #888;
+  }
+
+  /* Section headers */
+  .section--page {
+    margin-bottom: 24px;
+  }
+
+  .section--page h2 {
+    font-size: 12pt;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Job entries - better spacing */
+  .job-entry {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .job-entry:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .job-header {
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 10px;
+  }
+
+  .job-title {
+    font-size: 11pt;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .job-date {
+    font-size: 9.5pt;
+    color: #555;
+    font-weight: 400;
+  }
+
+  .job-entry ul {
+    padding-left: 20px;
+    margin-top: 8px;
+  }
+
+  .job-entry li {
+    font-size: 10pt;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  /* Education entries */
+  .education-entry {
+    margin-bottom: 16px;
+  }
+
+  .education-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .education-school {
+    font-size: 11pt;
+    font-weight: 600;
+  }
+
+  .education-date {
+    font-size: 9.5pt;
+    color: #555;
+    font-weight: 400;
+  }
+
+  .education-entry ul {
+    padding-left: 20px;
+  }
+
+  .education-entry li {
+    font-size: 10pt;
+    line-height: 1.6;
+  }
+
+  /* Skills list */
+  .skills-list {
+    padding-left: 20px;
+  }
+
+  .skills-list li {
+    font-size: 10pt;
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }
+}
+
+/* Responsive - Small Mobile */
+@media (max-width: 400px) {
+  #container--main {
+    padding: 16px 12px;
+  }
+
+  #user--name {
+    font-size: 16pt;
+  }
+
+  .contact-line {
+    font-size: 9pt;
+  }
+
+  .location {
+    font-size: 9pt;
+  }
+
+  .job-title,
+  .education-school {
+    font-size: 10.5pt;
+  }
+
+  .job-entry li,
+  .education-entry li,
+  .skills-list li {
+    font-size: 9.5pt;
   }
 }
