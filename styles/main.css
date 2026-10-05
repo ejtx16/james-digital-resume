@@ -23,6 +23,39 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   min-height: 1056px;
   text-align: justify;
+  position: relative;
+}
+
+/* Download PDF Button */
+.btn--download {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  padding: 6px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 8.5pt;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #888;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.btn--download:hover {
+  background-color: #f2f2f2;
+  border-color: #555;
+}
+
+.btn--download:focus-visible {
+  outline: 2px solid #1155cc;
+  outline-offset: 2px;
 }
 
 /* Header Section */
@@ -231,6 +264,10 @@ body {
   .contact-line a {
     color: #1155cc;
   }
+
+  .btn--download {
+    display: none;
+  }
 }
 
 /* Responsive - Tablet */
@@ -273,6 +310,13 @@ body {
     box-shadow: none;
     min-height: auto;
     text-align: left;
+  }
+
+  .btn--download {
+    position: static;
+    display: block;
+    width: fit-content;
+    margin: 0 0 16px auto;
   }
 
   /* Header adjustments for mobile */
