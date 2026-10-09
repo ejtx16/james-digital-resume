@@ -179,18 +179,21 @@ body {
 }
 
 /* Education */
-.education-entry {
+.education-entry,
+.achievement-entry {
   margin-bottom: 8px;
 }
 
-.education-header {
+.education-header,
+.achievement-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0;
 }
 
-.education-school {
+.education-school,
+.achievement-title {
   font-family: Arial, sans-serif;
   font-size: 10.5pt;
   font-style: normal;
@@ -199,7 +202,8 @@ body {
   line-height: 1.5;
 }
 
-.education-date {
+.education-date,
+.achievement-date {
   font-family: Arial, sans-serif;
   font-size: 10.5pt;
   font-style: normal;
@@ -281,13 +285,15 @@ body {
   }
 
   .job-header,
-  .education-header {
+  .education-header,
+  .achievement-header {
     flex-direction: column;
     gap: 0;
   }
 
   .job-date,
-  .education-date {
+  .education-date,
+  .achievement-date {
     font-size: 10pt;
   }
 
@@ -414,21 +420,25 @@ body {
   }
 
   /* Education entries */
-  .education-entry {
+  .education-entry,
+  .achievement-entry {
     margin-bottom: 16px;
   }
 
-  .education-header {
+  .education-header,
+  .achievement-header {
     flex-direction: column;
     gap: 2px;
   }
 
-  .education-school {
+  .education-school,
+  .achievement-title {
     font-size: 11pt;
     font-weight: 600;
   }
 
-  .education-date {
+  .education-date,
+  .achievement-date {
     font-size: 9.5pt;
     color: #555;
     font-weight: 400;
@@ -474,7 +484,8 @@ body {
   }
 
   .job-title,
-  .education-school {
+  .education-school,
+  .achievement-title {
     font-size: 10.5pt;
   }
 
